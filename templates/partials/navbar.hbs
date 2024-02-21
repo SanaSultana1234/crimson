@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div>
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO3.jpg" alt="Logo" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carouselExampleControls">Awareness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#second-image">About Us</a>
+                </li>
+                <!-- Other navbar items -->
+                <!-- ... -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Fitness and Health Support
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="#" onclick="openImage('images/img16.jpg')">Generate Health Report</a>
+                        <a class="dropdown-item" href="/details">Diet and Exercise Plan</a>
+                    </div>
+                    
+                    <script>
+                        function openImage(imagePath) {
+                            window.open(imagePath, '_blank');
+                        }
+                    </script>
+                    
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Book A Appointment
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="https://www.google.com/maps/search/HPV+Vaccination+near+me/@17.4410933,78.4783872,13z/data=!3m1!4b1?entry=ttu">Vaccination</a>
+                        <a class="dropdown-item" href="https://www.google.com/maps/search/gynecologists+near+me/@17.4410933,78.4783872,13z/data=!3m1!4b1?entry=ttu">Consultation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="/tracker">Tracker</a>
+                        <a class="dropdown-item" href="#">Health Profile</a>
+                        <a class="dropdown-item" href="#">Refer Friends</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/login">Logout</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/donations">Donation Drive</a>
+                </li>
+            </ul>
+        </div>
+    </nav>

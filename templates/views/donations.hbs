@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crimson</title>
+    <link rel="stylesheet" href="css/donations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    {{!-- <script src="script.js" defer></script> --}}
+  </head>
+  <body>
+    <h1>Donation Drive - Every small act of kindness counts</h1>
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="details">
+            <i class="uil uil-camera"></i>
+            <span>Smile Days</span>
+          </div>
+          <div class="buttons"><i class="close-icon uil uil-times"></i></div>
+        </header>
+        <div class="preview-img">
+          <div class="img"><img src="" alt="preview-img"></div>
+        </div>
+      </div>
+    </div>
+    <section class="gallery">
+      <ul class="images">
+        <li class="img"><img src="images/d1.jpg" alt="img"></li>
+        <li class="img"><img src="images/d2.jpg" alt="img"></li>
+        <li class="img"><img src="images/d3.jpg" alt="img"></li>
+        <li class="img"><img src="images/d4.jpg" alt="img"></li>
+        <li class="img"><img src="images/d5.jpg" alt="img"></li>
+        <li class="img"><img src="images/d6.jpg" alt="img"></li>
+        <li class="img"><img src="images/d7.jpg" alt="img"></li>
+        <li class="img"><img src="images/d8.jpg" alt="img"></li>
+        <li class="img"><img src="images/d9.jpg" alt="img"></li>
+        <li class="img"><img src="images/d10.jpg" alt="img"></li>
+        <li class="img"><img src="images/d11.jpg" alt="img"></li>
+      </ul>
+    </section>
+    <button><a href="#">DONATE</a></button>
+    <script>const allImages = document.querySelectorAll(".images .img");
+const lightbox = document.querySelector(".lightbox");
+const closeImgBtn = lightbox.querySelector(".close-icon");
+
+allImages.forEach(img => {
+    // Calling showLightBox function with passing clicked img src as argument
+    img.addEventListener("click", () => showLightbox(img.querySelector("img").src));
+});
+
+const showLightbox = (img) => {
+    // Showing lightbox and updating img source
+    lightbox.querySelector("img").src = img;
+    lightbox.classList.add("show");
+    document.body.style.overflow = "hidden";
+}
+
+closeImgBtn.addEventListener("click", () => {
+    // Hiding lightbox on close icon click
+    lightbox.classList.remove("show");
+    document.body.style.overflow = "auto";
+});</script>
+  </body>
+</html>
